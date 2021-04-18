@@ -29,10 +29,10 @@ public class MarketPlace {
 	private String Status;
 	private float quantity;
 	
-	@OneToMany(mappedBy="marketplace")
+	@OneToMany(mappedBy="marketPlace")
 	private List<Bid> bids;
 	
-	@OneToOne(mappedBy="marketplace")
+	@OneToOne(mappedBy="marketPlace")
 	private CropsSold cropsSold;
 	
 	@OneToOne
