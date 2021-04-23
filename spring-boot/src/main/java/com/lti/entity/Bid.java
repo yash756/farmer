@@ -32,7 +32,7 @@ public class Bid {
 
 	@ManyToOne
 	@JoinColumn(name="item_no")
-	private MarketPlace marketPlace;
+	private MarketPlace marketplace;
 
 	public int getBidId() {
 		return bidId;
@@ -75,11 +75,11 @@ public class Bid {
 	}
 
 	public MarketPlace getMarketplace() {
-		return marketPlace;
+		return marketplace;
 	}
 
-	public void setMarketplace(MarketPlace marketPlace) {
-		this.marketPlace = marketPlace;
+	public void setMarketplace(MarketPlace marketplace) {
+		this.marketplace = marketplace;
 	}
 	
 	
